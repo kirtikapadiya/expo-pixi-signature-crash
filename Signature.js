@@ -3,6 +3,7 @@ import * as ExpoPixi from 'expo-pixi';
 import React, { useRef} from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { useNavigation } from "react-navigation-hooks";
+delete global.WebGLRenderingContext;
 class SignatureWorkaround extends ExpoPixi.Signature {
   constructor(props, context) {
     super(props, context);
